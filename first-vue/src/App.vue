@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <p>Goodbye HelloWorld.</p>
+    <Header msg="HOGEHOGE" />
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
+
 export default {
   name: 'App',
-  components: {}
+  components: {
+    Header
+  }
 }
 </script>
 
@@ -19,6 +22,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  max-width: 800px;
+  margin: 60px auto;
+
 }
 </style>

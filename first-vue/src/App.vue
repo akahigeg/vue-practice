@@ -3,6 +3,7 @@
     <Header msg="HOGEHOGE" />
     <p>{{ msg }}</p>
     <input type="text" v-model="msg">
+    <button @click="clear()">clear</button>
   </div>
 </template>
 
@@ -16,6 +17,11 @@ export default {
   data() {
     return {
       msg: "Hello World!"
+    }
+  },  
+  methods: {
+    clear () {
+      this.msg = ''
     }
   }
 }

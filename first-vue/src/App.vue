@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <Header msg="HOGEHOGE" />
+    <p>{{ msg }}</p>
+    <input type="text" v-model="msg">
   </div>
 </template>
 
@@ -8,9 +10,13 @@
 import Header from './components/Header.vue'
 
 export default {
-  name: 'App',
   components: {
     Header
+  },
+  data() {
+    return {
+      msg: "Hello World!"
+    }
   }
 }
 </script>
